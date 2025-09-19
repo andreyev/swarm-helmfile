@@ -1,0 +1,9 @@
+tenant: A
+network: tenantA_net
+mysql:
+  image: mysql:8.0
+  rootPassword: rootA123
+  database: tenantA_db
+nginx:
+  image: nginx:latest
+  port: 8081

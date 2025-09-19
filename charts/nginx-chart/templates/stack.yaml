@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  nginx:
+    image: {{ .Values.nginx.image }}
+    ports:
+      - "{{ .Values.nginx.port }}:80"
+    networks:
+      - {{ .Values.network }}

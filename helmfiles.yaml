@@ -1,0 +1,9 @@
+releases:
+  - name: network
+    chart: charts/network-chart
+
+  - name: mysql
+    chart: charts/mysql-chart
+
+  - name: nginx
+    chart: charts/nginx-chart

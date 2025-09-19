@@ -1,0 +1,9 @@
+tenant: C
+network: tenantC_net
+mysql:
+  image: mysql:8.0
+  rootPassword: rootC123
+  database: tenantC_db
+nginx:
+  image: nginx:latest
+  port: 8083

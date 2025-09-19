@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  mysql:
+    image: {{ .Values.mysql.image }}
+    environment:
+      - MYSQL_ROOT_PASSWORD={{ .Values.mysql.rootPassword }}
+      - MYSQL_DATABASE={{ .Values.mysql.database }}
+      - TENANT={{ .Values.tenant }}
+    networks:
+      - {{ .Values.network }}

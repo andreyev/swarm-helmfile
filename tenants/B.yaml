@@ -1,0 +1,9 @@
+tenant: B
+network: tenantB_net
+mysql:
+  image: mysql:8.0
+  rootPassword: rootB123
+  database: tenantB_db
+nginx:
+  image: nginx:latest
+  port: 8082
