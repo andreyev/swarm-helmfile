@@ -21,3 +21,8 @@ $ tree
     └── C.yaml
 
 9 directories, 11 files
+
+$ helmfile -q -f ./helmfiles.yaml template --values ./tenants/A.yaml | yq ea '. as $item ireduce ({}; . * $item )' | docker stack deploy -d tenant-A -c -
+Creating network tenant-A_tenantA_net
+Creating service tenant-A_mysql
+Creating service tenant-A_nginx
