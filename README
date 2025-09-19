@@ -1,0 +1,23 @@
+$ tree
+.
+├── charts
+│   ├── mysql-chart
+│   │   ├── Chart.yaml
+│   │   └── templates
+│   │       └── stack.yaml
+│   ├── network-chart
+│   │   ├── Chart.yaml
+│   │   └── templates
+│   │       └── stack.yaml
+│   └── nginx-chart
+│       ├── Chart.yaml
+│       └── templates
+│           └── stack.yaml
+├── deploy.sh
+├── helmfiles.yaml
+└── tenants
+    ├── A.yaml
+    ├── B.yaml
+    └── C.yaml
+
+9 directories, 11 files
